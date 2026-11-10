@@ -3,19 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#123c32" />
+    <meta name="theme-color" content="#6575ce" />
     <title>Mi Plata | Tu dinero, a tu ritmo</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- defer respeta este orden y espera a que el HTML esté disponible. -->
+    <script src="js/utilidades.js" defer></script>
+    <script src="js/modelos/Cuenta.js" defer></script>
+    <script src="js/modelos/CuentaAhorros.js" defer></script>
+    <script src="js/modelos/CuentaCorriente.js" defer></script>
+    <script src="js/modelos/TarjetaCredito.js" defer></script>
+    <script src="js/modelos/Cliente.js" defer></script>
+    <script src="js/servicios/Banco.js" defer></script>
+    <script src="js/servicios/MetasAhorro.js" defer></script>
+    <script src="js/vistas/Formularios.js" defer></script>
+    <script src="js/vistas/VistaAcceso.js" defer></script>
+    <script src="js/vistas/VistaPanel.js" defer></script>
+    <script src="js/vistas/VistaProductos.js" defer></script>
+    <script src="js/vistas/VistaUsuarios.js" defer></script>
+    <script src="js/vistas/VistaMetas.js" defer></script>
+    <script src="js/Animaciones.js" defer></script>
+    <script src="js/Eventos.js" defer></script>
+    <script src="js/Aplicacion.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Ir al contenido</a>
     <header class="header">
       <a class="brand" href="#inicio" aria-label="Mi Plata, inicio"
-        ><span class="brand-icon">m.</span> mi plata<span class="brand-dot"
-          >.</span
-        ></a
+        ><svg class="brand-symbol" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="1" y="1" width="46" height="46" rx="15" fill="#e4e5fb" />
+          <path
+            d="M12 31V20l12-7 12 7v11l-12 7-12-7Z"
+            fill="none"
+            stroke="#655aa9"
+            stroke-width="2.5"
+            stroke-linejoin="round"
+          />
+          <path
+            d="m17 27 7 4 7-4M24 31V19m-5 5 5-5 5 5"
+            fill="none"
+            stroke="#655aa9"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
+        ><span>mi plata<span class="brand-dot">.</span></span></a
       >
+
       <nav id="navegacion" aria-label="Navegación principal"></nav>
     </header>
     <div class="simulation">
